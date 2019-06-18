@@ -17,20 +17,20 @@
             <div class="card-body">
               <h4 class="card-title">Upload New Document</h4>
               
-              <form class="forms-sample">
+              <div class="forms-sample">
                 <div class="form-group">
                   <label for="exampleInputCity1">Title*</label>
-                  <input type="text" class="form-control" id="exampleInputCity1" placeholder="Title">
+                  <input type="text" class="form-control" id="title" placeholder="Title">
                 </div>
                 
                 <div class="form-group">
                   <label for="exampleInputCity1">Article Subject*</label>
-                  <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+                  <input type="text" class="form-control" id="subject" placeholder="Article subject">
                 </div>
                 
                 <div class="form-group">
                   <label>File upload*</label>
-                  <input type="file" name="img[]" class="file-upload-default">
+                  <input type="file" id="file" name="file" class="file-upload-default">
                   <div class="input-group col-xs-12">
                     <input type="text" class="form-control file-upload-info" disabled placeholder="Upload document">
                     <span class="input-group-append">
@@ -38,14 +38,48 @@
                     </span>
                   </div>
                 </div>
+                <button id="add" class="btn btn-primary mr-2">Add</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>    
+        <div class="col-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+                   
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Subject</th>
+                        <th>File</th>
+                        <th>Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input class="myinput" name="title" type="text" value="Computer Networks"></td>
+                        <td><input class="myinput" name="subject" type="text" value="Computer"></td>
+                        <td><input class="myinput" name="file" type="text" value="C://ACB.txt"></td>
+                        <td>
+                          <button class="btn pt-1 pb-1 pl-2 pr-2 mydelete" style="background-color:red;color:white;"><i class="mdi mdi-delete menu-icon"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br/>
                 <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                <button class="btn btn-light">Cancel</button>
-              </form>
+              </form>  
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="../../assets/js/add_remove_upload.js"></script>
     <!-- content-wrapper ends -->
     
  <!-- footer and end -->   

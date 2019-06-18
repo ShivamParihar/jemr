@@ -22,7 +22,7 @@ class LoginController extends CI_Controller {
 		$checked = true;
 
 		if($checked && $email == $admin_email){
-			return redirect('Admin');
+			return redirect('Admin/list_new');
 		}
 		else if($checked && $email != $admin_email){
 			return redirect('User/upload');	

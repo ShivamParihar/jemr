@@ -16,6 +16,17 @@
   <link rel="stylesheet" href="../../assets/css/style1.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+  <style>
+    td, th{
+      text-align: center;
+    }
+    .myinput{
+      text-align: center;
+      border:none;
+      background-color: inherit; 
+    }
+  </style>
 </head>
 
 <body>
@@ -35,7 +46,7 @@
         </div>  
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-        <ul class="navbar-nav mr-lg-4 w-100">
+       <!--  <ul class="navbar-nav mr-lg-4 w-100">
           <li class="nav-item nav-search d-none d-lg-block w-100">
             <div class="input-group">
               <div class="input-group-prepend">
@@ -46,7 +57,7 @@
               <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">
             </div>
           </li>
-        </ul>
+        </ul> -->
         <ul class="navbar-nav navbar-nav-right">
           
           <li class="nav-item dropdown mr-4">
