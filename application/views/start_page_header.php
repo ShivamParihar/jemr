@@ -59,6 +59,7 @@
 .carousel-inner>.item {
     position: relative;
     display: none;
+    padding: 20px;
     -webkit-transition: .6s ease-in-out left;
     -o-transition: .6s ease-in-out left;
     transition: .6s ease-in-out left;
@@ -77,6 +78,7 @@
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
     perspective: 1000px;
+    padding: 20px;
 }
 .carousel-inner>.item.active.right, .carousel-inner>.item.next {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -243,6 +245,38 @@
 .carousel-indicators {
     bottom: 20px;
 }
+.my-table-btn, .my-table-btn:hover{
+  font-size:12px;
+      color: #FFFFFF;
+      background-color: #1658B3 ;
+          border-radius: 20px;
+    font-size: 12px !important;
+    padding: 3px 10px;
+  }
+
+.header-left{
+  text-align:right;
+}
+.header-middle{
+  text-align: left;
+  text-transform:uppercase;
+}
+.header-middle > h1{
+  font-size: 50px;
+  color: #333;  
+  border-radius: 15px;
+}
+@media only screen and (max-width: 768px){
+  .header-left{
+  text-align:center;
+}
+.header-middle{
+  text-align: center;
+}
+.header-right > h1{
+  text-align: center;
+}
+} 
 </style>
 </head>
 <body class="animsition">
@@ -250,30 +284,30 @@
   <!-- Header -->
   <header>
     <!-- Header desktop -->
-    <div class="container-fluid p-b-20 m-r-0 m-l-0">
-      <div class="row" >
+    <div class="container p-b-20">
+      <div class="row" style="color:#000;">
 
         <!-- Image -->
-        <div class="col-md-3 m-r-0" style="text-align:right; ">
+        <div class="col-md-3 header-left">
           <img src="../../assets/images/logo1.jpg" alt="Paripex - Indian Journal Of Research"width="200px" height="200px">          
         </div>
 
         <!-- middle-content -->
-        <div class="col-md-6 m-t-10"  style="text-align: left; color:#000; text-transform:uppercase;">
-          <h1 style="font-size: 50px;color: #333;border-radius: 15px;">JEMR</h1>
+        <div class="col-md-6 m-t-10 header-middle">
+          <h1>JEMR</h1>
           <h3><strong>Journal of Engineering Management And Research</strong></h3>
           <h3>PRINT ISSN NO 2250 - 1991</h3>
           <h3><strong>PEER REVIEW, INTERNATIONAL JOURNAL</strong></h3>
           <h3><strong>JOURNAL DOI : 10.15373/22501991</strong></h3>
         </div>
         <!-- right-side-content -->
-        <div class="col-md-3" style="text-align: left;color:#000; ">          
+        <div class="col-md-3 header-right">          
           <span>             
             <h3 class="m-t-50">
               <i class="fa fa-calendar"></i>
               &nbsp;Wednesday, Jun,19<sup>th</sup>, 2019,&nbsp;<br>
             </h3>
-            <h3><i class="fa fa-clock"></i><span style="margin-left:4px;padding: 1px;"><span id="txt" style="font-size: 13px;">3:45:43 PM</span></span></h3>
+            <!-- <h3><i class="fa fa-clock"></i><span style="margin-left:4px;padding: 1px;"><span id="txt" style="font-size: 13px;">3:45:43 PM</span></span></h3> -->
           </span>
           <h3 ><i class="fa fa-envelope"></i><a href="mailto: editor@paripex.in">  editor@paripex.in</a></h3>
           <h3 ><i class="fa fa-phone"></i> +91 88 66 00 3636</h3>

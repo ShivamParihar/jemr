@@ -1,71 +1,142 @@
 <?php  $this->load->view('start_page_header'); ?>
+<!-- #0b1c38 -->
+<!-- #56cc24 -->
 
   <!-- Content -->
   <section class="bg0 p-b-140 p-t-10">
     <div class="container">
       <div class="row justify-content-center"> 
+        
+        <!-- image -->
+        <div class="p-r-20 p-l-20" style="max-width: 800px;">
+          <img src="../../assets/images/banner.jpg" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- buttons -->
+        <div class="m-t-20" style="width : 100%;text-align: center;">
+          <a href=""><img src="../../assets/images/upload.png"  style="max-width: 200px;"></a>
+          <a href=""><img src="../../assets/images/authguid.png"  style="max-width: 200px;"></a>
+          <a href=""><img src="../../assets/images/download.png"  style="max-width: 200px;"></a>
+        </div>
+
         <!-- Sidebar -->
-        <div class="col-md-10 col-lg-4 p-b-30">
+        <div class="col-md-10 col-lg-4 p-b-30 p-l-20">
           <div class="p-l-10 p-rl-0-sr991 p-t-70">            
             <!-- Category -->
             <div class="p-b-60">
               <div class="how2 how2-cl4 flex-s-c">
-                <h3 class="f1-m-2 cl3 tab01-title">Subject</h3>
+                <h3 class="f1-m-2 cl3 tab01-title">Latest News</h3>
               </div>
 
               <ul class="p-t-35">
                 <li class="how-bor3 p-rl-4">
-                  <a href="#" class="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                    Fashion
-                  </a>
+                  Call for Papers..
+                  PIJR invites high-quality Research Papers/Articles for July 2019 Issue ...
                 </li>
 
                 <li class="how-bor3 p-rl-4">
-                  <a href="#" class="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                    Beauty
-                  </a>
-                </li>
-
-                <li class="how-bor3 p-rl-4">
-                  <a href="#" class="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                    Street Style
-                  </a>
-                </li>                
+                  June Issue Released..
+                  Dear Colleague, June issue of Paripex - Indian Journal Of Research is released...thank you very much for your intellectual contribution ...
+                </li>                               
               </ul>
             </div>
 
             <!-- Archive -->
-            <div class="p-b-37">
+            
+            <div class="p-t-50">
               <div class="how2 how2-cl4 flex-s-c">
-                <h3 class="f1-m-2 cl3 tab01-title">Archive</h3>
+                <h3 class="f1-m-2 cl3 tab01-title">
+                  Stay Connected
+                </h3>
               </div>
 
-              <ul class="p-t-32">
-                <li class="p-rl-4 p-b-19">
-                  <a href="#" class="flex-wr-sb-c f1-s-10 text-uppercase cl2 hov-cl10 trans-03">
-                    <span>May 2018</span>
-                    <span>(9)</span>
+              <ul class="p-t-35">
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-facebook fs-16 cl0 hov-cl0">
+                    <span class="fab fa-facebook-f"></span>
                   </a>
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">                     Like
+                    </a>
+                  </div>
                 </li>
-                <li class="p-rl-4 p-b-19">
-                  <a href="#" class="flex-wr-sb-c f1-s-10 text-uppercase cl2 hov-cl10 trans-03">
-                    <span>June 2018</span>
-                    <span>(36)</span>
+
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-youtube fs-16 cl0 hov-cl0">
+                    <span class="fab fa-google-plus-g"></span>
                   </a>
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    </span>
+
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+                      Follow
+                    </a>
+                  </div>
                 </li>
-                <li class="p-rl-4 p-b-19">
-                  <a href="#" class="flex-wr-sb-c f1-s-10 text-uppercase cl2 hov-cl10 trans-03">
-                    <span>July 2018</span>
-                    <span>(23)</span>
+
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-twitter fs-16 cl0 hov-cl0">
+                    <span class="fab fa-twitter"></span>
                   </a>
-                </li>                
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+                      Follow
+                    </a>
+                  </div>
+                </li>
+
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-youtube fs-16 cl0 hov-cl0">
+                    <span class="fab fa-pinterest"></span>
+                  </a>
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    </span>
+
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+                      Follow
+                    </a>
+                  </div>
+                </li>
+
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-facebook fs-16 cl0 hov-cl0">
+                    <span class="fab fa-linkedin-in"></span>
+                  </a>
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    </span>
+
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+                      Follow
+                    </a>
+                  </div>
+                </li>
+
+                <li class="flex-wr-sb-c p-b-20">
+                  <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-success fs-16 cl0 hov-cl0">
+                    <span class="fas fa-envelope"></span>
+                  </a>
+
+                  <div class="size-w-3 flex-wr-sb-c">
+                    </span>
+
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+                      Follow
+                    </a>
+                  </div>
+                </li>
               </ul>
             </div>
+
           </div>
         </div>
 
         <!-- Main content -->
-        <div class="col-md-10 col-lg-8 p-b-30">
+        <div class="col-md-10 col-lg-8 p-b-30 p-l-20">
           <div class="row">          
             <h1 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">JOURNAL OF ENGINEERING MANAGEMENT AND RESEARCH</h1>
             <p class="f1-s-11 cl6 p-b-25">
@@ -89,9 +160,8 @@
             </ul>
 
 
-            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Benefits of PIJR Publication:</h3>
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Most Popular Articles of the Month</h3>
             <div class="container">
-              <h2>Carousel Example</h2>
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -101,30 +171,69 @@
                 </ol>
 
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-
+                <div class="carousel-inner" style="background: #222;color: #fff;
+                font-family:Arial;">
                   <div class="item active">
-                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="Los Angeles" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>Los Angeles</h3>
-                      <p>LA is always so much fun!</p>
-                    </div>
+                    <table style="width:100%;">
+                      <tbody>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Title</td>
+                          <td class="p-l-30 p-b-20">: 
+                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Author</td>
+                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Subject</td>
+                          <td class="p-l-30 p-b-20">: Ayurveda</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                    
+                  </div>
+
+                 <div class="item">
+                    <table style="width:100%;">
+                      <tbody>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Title</td>
+                          <td class="p-l-30 p-b-20">: 
+                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Author</td>
+                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Subject</td>
+                          <td class="p-l-30 p-b-20">: Ayurveda</td>
+                        </tr>
+                      </tbody>
+                    </table> 
+                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                    
                   </div>
 
                   <div class="item">
-                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>Chicago</h3>
-                      <p>Thank you, Chicago!</p>
-                    </div>
-                  </div>
-                
-                  <div class="item">
-                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
-                    </div>
+                    <table style="width:100%;">
+                      <tbody>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Title</td>
+                          <td class="p-l-30 p-b-20">: 
+                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Author</td>
+                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Subject</td>
+                          <td class="p-l-30 p-b-20">: Ayurveda</td>
+                        </tr>
+                      </tbody>
+                    </table>   
+                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                  
                   </div>
               
                 </div>
