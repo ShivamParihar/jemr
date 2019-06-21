@@ -7,18 +7,6 @@
     <div class="container">
       <div class="row justify-content-center"> 
         
-        <!-- image -->
-        <div class="p-r-20 p-l-20" style="max-width: 800px;">
-          <img src="../../assets/images/banner.jpg" style="width: 100%; height: auto;">
-        </div>
-
-        <!-- buttons -->
-        <div class="m-t-20" style="width : 100%;text-align: center;">
-          <a href=""><img src="../../assets/images/upload.png"  style="max-width: 200px;"></a>
-          <a href=""><img src="../../assets/images/authguid.png"  style="max-width: 200px;"></a>
-          <a href=""><img src="../../assets/images/download.png"  style="max-width: 200px;"></a>
-        </div>
-
         <!-- Sidebar -->
         <div class="col-md-10 col-lg-4 p-b-30 p-l-20">
           <div class="p-l-10 p-rl-0-sr991 p-t-70">            

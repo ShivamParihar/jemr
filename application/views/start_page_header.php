@@ -254,6 +254,19 @@
     padding: 3px 10px;
   }
 
+  @media screen and (max-width:768px) {
+    .my-table-btn, .my-table-btn:hover{
+  font-size:12px !important;
+      color: #FFFFFF !important;
+      background-color: #1658B3  !important;
+          border-radius: 20px !important;
+    font-size: 12px !important;
+    padding: 3px 10px !important;
+  }
+  }
+    
+}
+
 .header-left{
   text-align:right;
 }
@@ -293,7 +306,7 @@
         </div>
 
         <!-- middle-content -->
-        <div class="col-md-6 m-t-10 header-middle">
+        <div class="col-md-5 m-t-10 header-middle">
           <h1>JEMR</h1>
           <h3><strong>Journal of Engineering Management And Research</strong></h3>
           <h3>PRINT ISSN NO 2250 - 1991</h3>
@@ -301,15 +314,15 @@
           <h3><strong>JOURNAL DOI : 10.15373/22501991</strong></h3>
         </div>
         <!-- right-side-content -->
-        <div class="col-md-3 header-right">          
+        <div class="col-md-4" style="text-align: center;">          
           <span>             
             <h3 class="m-t-50">
               <i class="fa fa-calendar"></i>
-              &nbsp;Wednesday, Jun,19<sup>th</sup>, 2019,&nbsp;<br>
+              &nbsp;Wednesday, Jun,19<sup>th</sup><br>
             </h3>
             <!-- <h3><i class="fa fa-clock"></i><span style="margin-left:4px;padding: 1px;"><span id="txt" style="font-size: 13px;">3:45:43 PM</span></span></h3> -->
           </span>
-          <h3 ><i class="fa fa-envelope"></i><a href="mailto: editor@paripex.in">  editor@paripex.in</a></h3>
+          <h3 ><i class="fa fa-envelope"></i><a href="mailto: editor@paripex.in"> editor@paripex.in</a></h3>
           <h3 ><i class="fa fa-phone"></i> +91 88 66 00 3636</h3>
           <h3 ><i class="fa fa-phone"></i> +91 88 66 11 3636</h3>
             
@@ -350,8 +363,8 @@
           <div class="right-topbar" style="font-size: 15px;">
             <!-- <a href="#"><span class="fab fa-facebook-f"></span></a>
             <a href="#"><span class="fab fa-twitter"></span></a> -->
-            <a href="LoginController">Sign in</a>
-            <a href="LoginController/register_view">Register</a>           
+            <a href="../LoginController">Sign in</a>
+            <a href="../LoginController/register_view">Sign up</a>           
           </div>
         </div>
       </div>
@@ -386,3 +399,24 @@
       </div>
     </div>
   </header>
+
+  <section class="bg0 p-b-10 p-t-10">
+    <div class="container">
+      <div class="row justify-content-center"> 
+        
+        <!-- image -->
+        <div  style="max-width: 700px;">
+          <img src="../../assets/images/banner.jpg" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- buttons -->
+        <div class="m-t-20" style="width : 100%;text-align: center;">
+          <a href="../LoginController" ><img src="../../assets/images/upload.png"  style="width:25%;max-width: 200px;"></a>
+          <a href="../Start/author_guideline"><img src="../../assets/images/authguid.png"  style="width:25%;max-width: 200px;"></a>
+          <a href="../Start/download"><img src="../../assets/images/download.png"  style="width:25%;max-width: 200px;"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

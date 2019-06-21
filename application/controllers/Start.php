@@ -26,4 +26,12 @@ class Start extends CI_Controller {
 	public function faq(){
 		$this->load->view('start_page_faq');
 	}
+
+	public function author_guideline(){
+		$this->load->view('start_page_author_guideline');
+	}
+
+	public function download(){
+		$this->load->view('start_page_download');
+	}
 }

@@ -3,7 +3,20 @@
     <div class="bg2 p-t-40 p-b-25">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-lg-4 p-b-20">
+
+          <div class="col-sm-6 col-lg-3 p-b-20">
+            <div class="size-h-3 flex-s-c">
+              <h5 class="f1-m-7 cl0">JERM</h5>
+            </div>
+
+            <ul class="m-t--12">
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                The JERM is the peer-reviewed interdisciplinary open access journal. The journal, established in 2018, is an open platform for insights, innovations and advances in methods and study designs using qualitative or mixed methods research. The journal publishes methods papers and study protocols. Researchers are requested to submit their original articles online for a peer review and analysis before its publication.
+              </li>           
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-20">
             <div class="size-h-3 flex-s-c">
               <h5 class="f1-m-7 cl0">Help Center</h5>
             </div>
@@ -19,9 +32,34 @@
                 <a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">Sitemap</a>
               </li>              
             </ul>
+            <div class="p-t-15">
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fab fa-facebook-f"></span>
+                </a>
+
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fab fa-google-plus-g"></span>
+                </a>
+
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fab fa-twitter"></span>
+                </a>
+
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fab fa-pinterest"></span>
+                </a>
+
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fab fa-linkedin-in"></span>
+                </a>
+
+                <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                  <span class="fas fa-envelope"></span>
+                </a>
+              </div>
           </div>
 
-          <div class="col-sm-6 col-lg-4 p-b-20">
+          <div class="col-sm-6 col-lg-3 p-b-20">
             <div class="size-h-3 flex-s-c">
               <h5 class="f1-m-7 cl0">Customer Information</h5>
             </div>
@@ -36,7 +74,7 @@
             </ul>
           </div>
 
-          <div class="col-sm-6 col-lg-4 p-b-20">
+          <div class="col-sm-6 col-lg-3 p-b-20">
             <div class="size-h-3 flex-s-c">
               <h5 class="f1-m-7 cl0">Security and Privacy</h5>
             </div>
@@ -53,6 +91,48 @@
               </li>              
             </ul>
           </div>
+
+
+
+          <!-- <div class="col-sm-6 col-lg-3 p-b-20">
+            <div class="size-h-3 flex-s-c">
+              <h5 class="f1-m-7 cl0">Stay Connected</h5>
+            </div>
+
+            <ul class="m-t--12">
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-facebook fs-16 cl0 hov-cl0">
+                  <span class="fab fa-facebook-f"></span>
+                </a>
+              </li>
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-youtube fs-16 cl0 hov-cl0">
+                  <span class="fab fa-google-plus-g"></span>
+                </a>
+              </li>
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-twitter fs-16 cl0 hov-cl0">
+                  <span class="fab fa-twitter"></span>
+                </a>
+              </li>
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-youtube fs-16 cl0 hov-cl0">
+                  <span class="fab fa-pinterest"></span>
+                </a>
+              </li>
+              <li class="how-bor1 p-rl-5 p-tb-10">
+               <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-facebook fs-16 cl0 hov-cl0">
+                  <span class="fab fa-linkedin-in"></span>
+                </a>
+              </li>
+              <li class="how-bor1 p-rl-5 p-tb-10">
+                <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-success fs-16 cl0 hov-cl0">
+                  <span class="fas fa-envelope"></span>
+                </a>
+              </li>              
+            </ul>
+          </div> -->
+
         </div>
       </div>
     </div>
