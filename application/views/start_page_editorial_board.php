@@ -56,9 +56,9 @@
 
               <!-- Editor in chief -->
               <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Editor in Chief</h3>  
-              <div class="row" style="border:1px solid black">
+              <div class="row" style="border:1px solid #333">
                 <!-- Profile pic -->
-                <div class="col-md-2" style="width: 100%;height: 100%;text-align: center;margin: auto;">
+                <div class="col-md-2 p-tb-10" style="width: 100%;height: 100%;text-align: center;margin: auto;">
                   <img style="width:100px;height:100px;border-radius: 50% " src="../../assets/images/blog-list-03.jpg">
                 </div> 
                 <!-- Person information -->
@@ -86,7 +86,7 @@
                           <td>:</td>
                           <td>
                           Prin. M C Shah Commerce College
-                          <button class="open-button" onclick="openPopUp()">Read More</button>
+                          <button class="open-button my-table-btn" onclick="openPopUp()">Read More</button>
                           <?php  $this->load->view('start_page_pop_up_window'); ?>
                           </td>
                         </tr>
@@ -100,9 +100,9 @@
               <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Editorial Board</h3>
               <div class="row">
                 <div class="col-md-6">
-                    <div class="row" style="border:1px solid black">
+                    <div class="row" style="border:1px solid #333">
                       <!-- Profile pic -->
-                      <div class="col-md-3" style="width: 100%;height: 100%;text-align: center;margin: auto;">
+                      <div class="col-md-3 p-tb-10" style="width: 100%;height: 100%;text-align: center;margin: auto;">
                         <img style="width:100px;height:100px;border-radius: 50% " src="../../assets/images/blog-list-03.jpg">
                       </div> 
                       <!-- Person information -->
@@ -130,7 +130,7 @@
                                 <td>:</td>
                                 <td>
                                 Prin. M C Shah Commerce College
-                                <button class="open-button" onclick="openPopUp()">Read More</button>
+                                <button class="open-button  my-table-btn" onclick="openPopUp()">Read More</button>
                                 <?php  $this->load->view('start_page_pop_up_window'); ?>
                                 </td>
                               </tr>
@@ -141,9 +141,9 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="row" style="border:1px solid black">
+                    <div class="row" style="border:1px solid #333">
                       <!-- Profile pic -->
-                      <div class="col-md-3" style="width: 100%;height: 100%;text-align: center;margin: auto;">
+                      <div class="col-md-3 p-tb-10" style="width: 100%;height: 100%;text-align: center;margin: auto;">
                         <img style="width:100px;height:100px;border-radius: 50% " src="../../assets/images/blog-list-03.jpg">
                       </div> 
                       <!-- Person information -->
@@ -171,7 +171,7 @@
                                 <td>:</td>
                                 <td>
                                 Prin. M C Shah Commerce College
-                                <button class="open-button" onclick="openPopUp()">Read More</button>
+                                <button class="open-button my-table-btn" onclick="openPopUp()">Read More</button>
                                 <?php  $this->load->view('start_page_pop_up_window'); ?>
                                 </td>
                               </tr>
@@ -188,13 +188,13 @@
       </div>
     </div>
   </section>
-<script>
-function openPopUp() {
-  document.getElementById("myForm").style.display = "block";
-}
+  <script>
+  function openPopUp() {
+    document.getElementById("myForm").style.display = "block";
+  }
 
-function closePopUp() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+  function closePopUp() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
   <?php  $this->load->view('start_page_footer'); ?>

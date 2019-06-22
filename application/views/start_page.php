@@ -25,7 +25,11 @@
                 <li class="how-bor3 p-rl-4">
                   June Issue Released..
                   Dear Colleague, June issue of Paripex - Indian Journal Of Research is released...thank you very much for your intellectual contribution ...
-                </li>                               
+                </li>    
+                <li class="how-bor3 p-rl-4">
+                  June Issue Released..
+                  Dear Colleague, June issue of Paripex - Indian Journal Of Research is released...thank you very much for your intellectual contribution ...
+                </li>                            
               </ul>
             </div>
 

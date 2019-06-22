@@ -21,7 +21,7 @@
                       <td>
                         <h2>ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </h2>
                         <p>Dr. Anuroopa H K, Dr. Suman.</p>
-                        <a href="" class="my-table-btn">Abstract</a>
+                        <a href="" class="my-table-btn">Journal DOI : 10.15373/22501991</a>
                         <a href="" class="my-table-btn">Certificate</a>
                         <a href="" class="my-table-btn">Download Pdf</a>
                       </td>
@@ -32,7 +32,7 @@
                       <td>
                         <h2>ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </h2>
                         <p>Dr. Anuroopa H K, Dr. Suman.</p>
-                        <a href="" class="my-table-btn">Abstract</a>
+                        <a href="" class="my-table-btn">Journal DOI : 10.15373/22501991</a>
                         <a href="" class="my-table-btn">Certificate</a>
                         <a href="" class="my-table-btn">Download Pdf</a>
                       </td>
@@ -42,7 +42,7 @@
                       <td>
                         <h2>ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </h2>
                         <p>Dr. Anuroopa H K, Dr. Suman.</p>
-                        <a href="" class="my-table-btn">Abstract</a>
+                        <a href="" class="my-table-btn">Journal DOI : 10.15373/22501991</a>
                         <a href="" class="my-table-btn">Certificate</a>
                         <a href="" class="my-table-btn">Download Pdf</a>
                       </td>

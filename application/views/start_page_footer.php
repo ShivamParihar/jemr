@@ -1,3 +1,12 @@
+<div style="width:100%;border:1px solid #333;padding:10px;text-align: center;">
+  
+  <form class="form-inline">
+    <b>Subscribe to our Newsletter</b>
+    <input class="form-control form-control-sm ml-3 w-50 m-r-8" type="text" placeholder="Your email" style="border-color: #333;">
+    <button type="submit" class="my-table-btn">Subscribe</button>
+  </form>
+</div>
+ 
 <!-- Footer -->
   <footer>
     <div class="bg2 p-t-40 p-b-25">

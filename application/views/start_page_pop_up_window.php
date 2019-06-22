@@ -36,6 +36,8 @@
       5. Bibilash Babu Suseela, Chittoria Ravi Kumar, Pandey Sandhya, Senthil Kumaran, Friji MT, Mohapatra Devi Prasad, Dinesh Kumar Sivakumar,. Application of Radiofrequency In Debridement And Wound Bed Preparation. Indian Journal of Orthopaedics Surgery 2016;2(1):35-41
       </p>
     </div>
-  </div>                                                        
-  <button type="button" class="btn cancel my-table-btn" onclick="closePopUp()">Close</button>                
+  </div>    
+  <div class="m-tb-20" style="text-align:center;">
+    <button type="button" class="cancel my-table-btn " onclick="closePopUp()">Close</button>                  
+  </div>                                                      
 </div>

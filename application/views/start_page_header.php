@@ -55,20 +55,20 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-}
-.carousel-inner>.item {
-    position: relative;
-    display: none;
-    padding: 20px;
-    -webkit-transition: .6s ease-in-out left;
-    -o-transition: .6s ease-in-out left;
-    transition: .6s ease-in-out left;
-}
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
-    line-height: 1;
-}
+  }
+  .carousel-inner>.item {
+      position: relative;
+      display: none;
+      padding: 20px;
+      -webkit-transition: .6s ease-in-out left;
+      -o-transition: .6s ease-in-out left;
+      transition: .6s ease-in-out left;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+      line-height: 1;
+  }
 @media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-inner>.item {
+  .carousel-inner>.item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
     -o-transition: -o-transform .6s ease-in-out;
     transition: -webkit-transform .6s ease-in-out;
@@ -79,23 +79,25 @@
     -webkit-perspective: 1000px;
     perspective: 1000px;
     padding: 20px;
+  }
+
+  .carousel-inner>.item.active.right, .carousel-inner>.item.next {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      left: 0;
+  }
+  .carousel-inner>.item.active.left, .carousel-inner>.item.prev {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      left: 0;
+  }
+  .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      left: 0;
+  }
 }
-.carousel-inner>.item.active.right, .carousel-inner>.item.next {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    left: 0;
-}
-.carousel-inner>.item.active.left, .carousel-inner>.item.prev {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    left: 0;
-}
-.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    left: 0;
-}
-}.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
     display: block;
 }
 .carousel-inner>.active {
@@ -106,16 +108,20 @@
     top: 0;
     width: 100%}
 .carousel-inner>.next {
-    left: 100%}
+    left: 100%
+  }
 .carousel-inner>.prev {
-    left: -100%}
+    left: -100%
+  }
 .carousel-inner>.next.left, .carousel-inner>.prev.right {
     left: 0;
 }
 .carousel-inner>.active.left {
-    left: -100%}
+    left: -100%
+  }
 .carousel-inner>.active.right {
-    left: 100%}
+    left: 100%
+  }
 .carousel-control {
     position: absolute;
     top: 0;
@@ -177,9 +183,11 @@
     line-height: 1;
 }
 .carousel-control .icon-prev:before {
-    content: "\2039"}
+    content: "\2039"
+  }
 .carousel-control .icon-next:before {
-    content: "\203a"}
+    content: "\203a"
+  }
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
@@ -225,7 +233,7 @@
     text-shadow: none;
 }
 @media screen and (min-width:768px) {
-    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
     width: 30px;
     height: 30px;
     margin-top: -10px;
@@ -244,6 +252,7 @@
 }
 .carousel-indicators {
     bottom: 20px;
+}
 }
 .my-table-btn, .my-table-btn:hover{
   font-size:12px;
@@ -264,8 +273,7 @@
     padding: 3px 10px !important;
   }
   }
-    
-}
+
 
 .header-left{
   text-align:right;
@@ -279,16 +287,22 @@
   color: #333;  
   border-radius: 15px;
 }
+.header-right{
+  text-align: left;
+}
 @media only screen and (max-width: 768px){
-  .header-left{
-  text-align:center;
+    .header-left{
+    text-align:center;
+  }
+  .header-middle{
+    text-align: center;
+  }
+  .header-right {
+    text-align: center;
+  }
 }
-.header-middle{
-  text-align: center;
-}
-.header-right > h1{
-  text-align: center;
-}
+.form-inline {
+    justify-content: center;
 } 
 </style>
 </head>
@@ -306,7 +320,7 @@
         </div>
 
         <!-- middle-content -->
-        <div class="col-md-5 m-t-10 header-middle">
+        <div class="col-md-6 m-t-10 header-middle">
           <h1>JEMR</h1>
           <h3><strong>Journal of Engineering Management And Research</strong></h3>
           <h3>PRINT ISSN NO 2250 - 1991</h3>
@@ -314,7 +328,7 @@
           <h3><strong>JOURNAL DOI : 10.15373/22501991</strong></h3>
         </div>
         <!-- right-side-content -->
-        <div class="col-md-4" style="text-align: center;">          
+        <div class="col-md-3 header-right">          
           <span>             
             <h3 class="m-t-50">
               <i class="fa fa-calendar"></i>
@@ -394,7 +408,7 @@
          <!--  <li class="right-topbar"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
           <li class="right-topbar"><a href="#"><span class="fab fa-twitter"></span></a></li> -->
           <li class="right-topbar"><a href="LoginController">Sign in</span></a></li>
-          <li class="right-topbar"><a href="LoginController/register_view">Register</span></a></li>
+          <li class="right-topbar"><a href="LoginController/register_view">Sign in</span></a></li>
         </ul>        
       </div>
     </div>
