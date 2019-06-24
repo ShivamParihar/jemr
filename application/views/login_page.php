@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V4</title>
+	<title>JEMR | Sign in</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="../assets/images/icons/favicon.ico">
+	 <link rel="icon" type="image/jpg" href="../../assets/images/logo1.jpg">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -41,7 +41,7 @@
 <body>
 	<div class="limiter">
 		<?php if( $info = $this->session->flashdata('info')){
-		    echo '<div class="alert alert-info alert-dismissible">
+		    echo '<div class="alert alert-info alert-dismissible" style="margin-bottom:0rem;">
 		  				<strong>'.$info.'</strong>
 		  				<button type="button" class="close" data-dismiss="alert">&times;</button>
 			      </div>';
@@ -50,10 +50,8 @@
 		?>
 		<div class="container-login100" style="background-image: url('../assets/images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<?php echo form_open('LoginController/login_check',['class'=>'login100-form validate-form']); ?>
-					<span class="login100-form-title p-b-49">
-						Login
-					</span>
+				<form class="login100-form validate-form" method="post" action="LoginController/login_check">
+					<span class="login100-form-title p-b-49">Login</span>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Email is required">
 						<span class="label-input100">Email*</span>
 						<input class="input100" type="email" name="email" placeholder="Type your Email">
@@ -64,20 +62,21 @@
 						<span class="label-input100">Password*</span>
 						<input class="input100" type="password" name="password" placeholder="Type your password">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
-					</div>
+					</div><br/>
 					
-					<div class="text-right p-t-8 p-b-31">
-						<a href="#">
-							Forgot password?
-						</a>
-					</div>
-					
+
+					<!-- <div class="validate-input m-t-10 m-b-10" >
+						<div class="g-recaptcha" data-sitekey="6LfIT6oUAAAAAGnNNnetM4oevHRD04wwmGrsFlsu" data-callback="	verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback">						
+						</div>
+	                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+	                    <div class="help-block with-errors"></div>
+					</div>					
+					 -->
+
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Login
-							</button>
+							<button class="login100-form-btn">Login</button>
 						</div>
 					</div>
 
@@ -93,9 +92,28 @@
 	
 
 	<div id="dropDownSelect1"></div>
-	
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 <!--===============================================================================================-->
 	<script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!-- <script>
+		$(document).ready(function(){
+			$(".recaptchaForm").submit(function(event){
+				var recaptcha = $("#g-recaptcha-response").vals();
+				if(recaptcha === ""){
+					event.preventDefault();
+					alert("check thee recaptcha");
+				}
+				event.preventDefault();
+				$.post("LoginController/login_check",{
+					"secret" : "6LfIT6oUAAAAAGQzlFN_KqWDBMkKgaupBf0ZHOo9",
+					"response" : recaptcha
+
+				},function(ajaxResponse){
+					console.log(ajaxResponse);
+				});
+			});
+		});
+	</script> -->
 <!--===============================================================================================-->
 	<script src="../assets/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->

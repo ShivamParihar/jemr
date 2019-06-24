@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V4</title>
+	<title>JEMR | Sign up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="../../assets/images/icons/favicon.ico">
+	 <link rel="icon" type="image/jpg" href="../../assets/images/logo1.jpg">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -80,7 +80,7 @@
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<span class="label-input100">Confirm Password*</span>
-						<input class="input100" type="password" name="c_password" placeholder="Confirm your password">
+						<input class="input100" type="password" name="cpassword" placeholder="Confirm your password">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div><br/>
 					

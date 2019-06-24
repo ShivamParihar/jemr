@@ -132,17 +132,17 @@
           <div class="row">          
             <h1 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">JOURNAL OF ENGINEERING MANAGEMENT AND RESEARCH</h1>
             <p class="f1-s-11 cl6 p-b-25">
-               PARIPEX - INDIAN JOURNAL OF RESEARCH (PIJR) is a double-reviewed monthly print-in published journal since January 2012. The aim of the journal to become a serious vehicle for inspiring and disseminating research papers, articles, case studies, review articles etc in all subject areas by the academicians, research scholars, corporate and practitioners with substantial experience and expertise in their respective fields. This journal is kept wide to provide platform for diversity of intellectual pursuit from all corners of the society for enrichment and enhancement of the group readers. The Journal is been published on every 15th of the month.
+               JEMR welcomes researchers and academicians to submit their original research work which meets the journal criteria of significance and scientific excellence. IJERMCE is scholarly online open access and peer received journals emphasising on research studies and application in field of Mechanical and Civil. Researchers are requested to submit their original articles online for a peer review and analysis before its publication. The editorial board encourages academician, research scholars and partitions to publish their articles related to Mechanical and Civil and relevant fields.
             </p>
             <p class="f1-s-11 cl6 p-b-10">
-               The Periphery of the Subject areas Includes:
+               The Subject areas Includes:
             </p>
             <p class="f1-s-11 cl6 p-b-10">
                Accountings, Finance, Management Accounting, Business, Commerce, Corporate Governance, Financial Accounting, Arts, Fine Arts, Designing, Medical, Bio-medical, Clinical Research, Home Science, Medical Science, Anatomy, Anesthesiology, Ayurveda, Biochemistry, Cardiology, Clinical Research, Clinical Science, Community Medicine, Dental Science, Dermatology, Diabetology, Electrotherapy, Endocrinology, Endodontic, ENT, Epidemiology, Forensic Medicine, Forensic Science, Gastroenterology, General Medicine, General Surgery, Genetics, Gynaecology, Health Science, Healthcare, Hepatobiliary Surgery, Homeopathic, Human Genetics, Immunohaematology, Immunology, Medical Physics, Medical Science, Medicine, Microbiology, Morphology, Neonatology, Nephrology, Neurology, Neurosurgery, Nursing, Gynaecology, Oncology, Ophthalmology, Oral Medicine, Oral Pathology, Orthodontology, Orthopaedics, Paediatrics, Pathology, Periodontology, Pharma, Otolaryngology, Pharmaceutical, Pharmacology, Pharmacy, Physiology, Physiotherapy, Plastic Surgery, Prosthodontics, Psychiatry, Pulmonary Medicine, Radiodiagnosis, Radiology, Rehabilitation Science, Rheumatology, Surgery, Unani Medicine, Urology,Psychology, Human ideology, Sociology, Economics, Education, Engineering, Electronics, Electrical, Information technology, Computer Science, Management, Organization behaviour, Organization psychology, Marketing. etc.
             </p>
 
 
-            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Benefits of PIJR Publication:</h3>
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Benefits of JEMR Publication:</h3>
             <ul style="background: #e7eef7;padding: 20px;border: 1px solid #dedfe7;">
               <li>1. Quality Publication with Reasonable time</li>
               <li>2. Indexed Journal with Cross Ref, Google Scholar, Index Copernicus etc</li>

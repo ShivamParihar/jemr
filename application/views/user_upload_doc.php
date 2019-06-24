@@ -15,9 +15,10 @@
         <div class="col-12 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Upload New Document</h4>
+              <h4>Upload New Document</h4><br>
               
-              <div class="forms-sample">
+              <form class="forms-sample" method="post" action="../User/user_upload_doc">
+
                 <div class="form-group">
                   <label for="exampleInputCity1">Title*</label>
                   <input type="text" class="form-control" id="title" placeholder="Title">
@@ -25,12 +26,18 @@
                 
                 <div class="form-group">
                   <label for="exampleInputCity1">Article Subject*</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Article subject">
+                  <select class="form-control" name="article_subject">
+                    <?php if( count($subject_list) ): ?>
+                      <?php foreach( $subject_list as $row ): ?>
+                        <option value="<?= $row->article_subject ?>"><?= $row->article_subject ?></option>
+                      <?php endforeach; ?>
+                    <?php endif; ?>                           
+                  </select> 
                 </div>
                 
                 <div class="form-group">
                   <label>File upload*</label>
-                  <input type="file" id="file" name="file" class="file-upload-default">
+                  <input type="file" id="file" name="file" class="file-upload-default"  accept=".doc,.docx">
                   <div class="input-group col-xs-12">
                     <input type="text" class="form-control file-upload-info" disabled placeholder="Upload document">
                     <span class="input-group-append">
@@ -38,8 +45,15 @@
                     </span>
                   </div>
                 </div>
-                <button id="add" class="btn btn-primary mr-2">Add</button>
-              </div>
+
+                <div class="form-group">
+                  <label for="exampleInputCity1">I/We Agree*</label><br>
+                  <input type="checkbox" id="title" required>
+                  <span>I Acknowledge that attached file carries Authors Name & Designations on first page of the Manuscript.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Add</button>
+              </form>
 
 
             </div>

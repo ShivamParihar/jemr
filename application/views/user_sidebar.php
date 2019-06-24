@@ -12,14 +12,14 @@
     <li class="nav-item">
       <a class="nav-link" href="../User/document">
         <i class="mdi mdi-file-document menu-icon"></i>
-        <span class="menu-title">Uploaded Documents</span>
+        <span class="menu-title">Your articles</span>
       </a>
     </li>
 
     <li class="nav-item">
       <a class="nav-link" href="../User/upload">
         <i class="mdi mdi-cloud-upload menu-icon"></i>
-        <span class="menu-title">Upload</span>
+        <span class="menu-title">Upload articles</span>
       </a>
     </li>
    

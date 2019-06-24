@@ -332,7 +332,7 @@
           <span>             
             <h3 class="m-t-50">
               <i class="fa fa-calendar"></i>
-              &nbsp;Wednesday, Jun,19<sup>th</sup><br>
+              &nbsp;<?= date("l jS \of F Y")?><br>
             </h3>
             <!-- <h3><i class="fa fa-clock"></i><span style="margin-left:4px;padding: 1px;"><span id="txt" style="font-size: 13px;">3:45:43 PM</span></span></h3> -->
           </span>

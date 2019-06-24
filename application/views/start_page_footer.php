@@ -15,7 +15,7 @@
 
           <div class="col-sm-6 col-lg-3 p-b-20">
             <div class="size-h-3 flex-s-c">
-              <h5 class="f1-m-7 cl0">JERM</h5>
+              <h5 class="f1-m-7 cl0">JEMR</h5>
             </div>
 
             <ul class="m-t--12">
@@ -162,7 +162,18 @@
       <span class="fas fa-angle-up"></span>
     </span>
   </div>
-
+ <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d0de64a53d10a56bd7b5452/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 <!--===============================================================================================-->  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <!--===============================================================================================-->
