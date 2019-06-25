@@ -48,7 +48,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-group row">
-                      <label class="col-sm-3 col-form-label"> Total Articles </label>
+                      <label class="col-sm-3 col-form-label">Total Articles </label>
                       <div class="col-sm-9">
                         <input class="form-control" disabled="" value="<?=$this->session->userdata('total_articles') ?>"/>
                       </div>

@@ -12,7 +12,7 @@
     <li class="nav-item">
       <a class="nav-link" href="../User/document">
         <i class="mdi mdi-file-document menu-icon"></i>
-        <span class="menu-title">Your articles</span>
+        <span class="menu-title">Your Submissions</span>
       </a>
     </li>
 
