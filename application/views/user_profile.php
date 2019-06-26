@@ -81,6 +81,6 @@
       </div>
     </div>
     <!-- content-wrapper ends -->
-    
+ 
  <!-- footer and end -->   
  <?php  $this->load->view('user_footer'); ?>

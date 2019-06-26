@@ -12,14 +12,14 @@
     <li class="nav-item">
       <a class="nav-link" href="../Admin/list_new">
         <i class="mdi mdi-file-document menu-icon"></i>
-        <span class="menu-title">New Uploads</span>
+        <span class="menu-title">New Submissions</span>
       </a>
     </li>
 
     <li class="nav-item">
       <a class="nav-link" href="../Admin/list_old">
         <i class="mdi mdi-file-document menu-icon"></i>
-        <span class="menu-title">Old Uploads</span>
+        <span class="menu-title">Old Submissions</span>
       </a>
     </li>
 

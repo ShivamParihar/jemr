@@ -5,12 +5,17 @@
         <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
       </div>
     </footer>
-    <!-- partial -->
   </div>
-  <!-- main-panel ends -->
-</div>
-    <!-- page-body-wrapper ends -->
- </div>
+<script>
+   function passwordToggle() {
+  var x = document.getElementById("mypassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ </script>
   <!-- container-scroller -->
   <!-- plugins:js -->
   <script src="../../assets/vendor/base/vendor.bundle.base.js"></script>

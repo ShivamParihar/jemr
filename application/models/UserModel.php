@@ -3,6 +3,30 @@
 class UserModel extends CI_Model {
 
   function get_profile_info($user_id){
+    $q = $this->db->select_sum('doc_uploaded')
+                  ->where('user_id',$user_id)
+                  ->where('submit',1)
+                  ->get('main_doc_info');
+
+    $total_articles = $q->row()->doc_uploaded;
+
+    $q = $this->db->select_sum('doc_approved')
+                  ->where('user_id',$user_id)
+                  ->where('submit',1)
+                  ->get('main_doc_info');
+
+    $approved_articles = $q->row()->doc_approved;
+
+    $q = $this->db->select_sum('doc_published')
+                  ->where('user_id',$user_id)
+                  ->where('submit',1)
+                  ->get('main_doc_info');
+
+    $published_articles = $q->row()->doc_published;
+
+    $this->session->set_userdata('total_articles',$total_articles);
+    $this->session->set_userdata('approved_articles',$approved_articles);
+    $this->session->set_userdata('published_articles',$published_articles); 
 
   }
 
@@ -45,7 +69,8 @@ class UserModel extends CI_Model {
       'doc_approved'=>0,
       'doc_published'=>0,
       'paid'=>0,
-      'submit'=>0
+      'submit'=>0,
+      'checked'=>0
     );
 
     $this->db->insert('main_doc_info',$data);
