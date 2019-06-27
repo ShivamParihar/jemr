@@ -114,4 +114,71 @@ class AdminModel extends CI_Model {
     $this->db->where('user_id', $user_id)
                 ->delete('main_doc_info');   
   }
+
+  //to check email exist for adding editorial
+  function email_exist($email){
+  	$q = $this->db->where('email',$email)
+  					->get('editorial_board');
+
+  	if($q->num_rows() > 0)
+  		return true;
+  	return false;
+  }
+
+  //to add editorial
+  function register_editorial($name, $email, $password, $position, $address, $publications){
+  	$data = array('name'=>$name,
+  	'email'=>$email,
+  	'password'=>$password,
+  	'position'=>$position,
+  	'address'=>$address,
+  	'publications'=>$publications
+  	);
+
+  	$row_affected = $this->db->insert('editorial_board',$data);
+  	if($row_affected > 0)
+  		return true;
+  	return false;
+  }
+
+  //to get editorial list
+  function get_editorial_list(){
+  	$q = $this->db->get('editorial_board');
+
+    $editorial_list = $q->result();
+    return $editorial_list;
+  }
+
+  // to get editorial detalis
+  function get_editorial_details($editorial_id){
+  	$q = $this->db->where('editorial_id',$editorial_id)
+                  ->get('editorial_board');
+
+    $row = $q->row_array();
+    $this->session->set_userdata('editorial_name', $row['name']);
+    $this->session->set_userdata('editorial_email', $row['email']);
+    $this->session->set_userdata('editorial_password', $row['password']);
+    $this->session->set_userdata('editorial_position', $row['position']);
+    $this->session->set_userdata('editorial_address', $row['address']);
+    $this->session->set_userdata('editorial_publications', $row['publications']);
+  }
+
+  // to update editorial profile
+  function update_editorial_profile($name, $password, $email, $editorial_id,
+											$position, $address, $publications){
+  	$this->db->set('name', $name);
+    $this->db->set('password', $password);
+    $this->db->set('email', $email);
+    $this->db->set('position', $position);
+    $this->db->set('address', $address);
+    $this->db->set('publications', $publications);
+    $this->db->where('editorial_id',$editorial_id);
+    $this->db->update('editorial_board');
+  }
+
+  //to delete a editorial
+  function delete_editorial($editorial_id){
+  	$this->db->where('editorial_id', $editorial_id)
+                ->delete('editorial_board');
+  }
 }

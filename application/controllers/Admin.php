@@ -3,6 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
+	//function to check admin has sign in or not
+	public function __construct(){	    
+	    parent::__construct();
+		if($this->session->userdata('user_id') == null){
+		        return redirect('LoginController');
+		}
+	}
+
 	//to view profile
 	public function profile(){
 		$this->session->set_userdata('title','Admin Profile');
@@ -92,13 +100,13 @@ class Admin extends CI_Controller {
 		$user_id = $this->session->userdata('user_user_id');
 
 		$this->session->set_userdata('user_user_id', $user_id);
-    	$user_details = $this->AdminModel->get_user_details($user_id);
+    	$this->AdminModel->get_user_details($user_id);
 		$user_main_doc_list = $this->UserModel->get_main_doc_list($user_id);
 			
-		$this->load->view('admin_view_user',['user_details'=>$user_details,
-											 'user_main_doc_list'=>$user_main_doc_list]);
+		$this->load->view('admin_view_user',['user_main_doc_list'=>$user_main_doc_list]);
 	}
 	
+	//to update user profile by admin
 	public function update_user_profile(){
 		$user_id = $this->session->userdata('user_user_id');
 		$name = $this->input->post('name');
@@ -110,8 +118,131 @@ class Admin extends CI_Controller {
 		return redirect('Admin/view_user/'.$user_id);
 	}
 
+	//to delete user
 	public function delete_user($user_id){
 		$this->AdminModel->delete_user($user_id);
 		return redirect('Admin/list_user');
+	}
+
+	public function add_user_view(){
+		$this->session->set_userdata('title','Add User');
+		$this->load->view('admin_add_user');
+	}
+
+	//to add user
+	public function add_user(){
+		$name = $this->input->post('name');
+		$email = $this->input->post('email');
+		$password  = $this->input->post('password');
+		$cpassword  = $this->input->post('cpassword');
+
+		if($password == $cpassword){
+			//check email already registered
+
+			$checked = $this->LoginRegister->email_exist($email);
+			if($checked){
+				//email already registered
+				$this->session->set_flashdata('info','Email already resistered');
+				$this->load->view('admin_add_user');
+			}
+			else{
+				//resister
+				$is_registered =  $this->LoginRegister->register_user($name, $email, $password);
+				if($is_registered)
+					$this->session->set_flashdata('info','Registration successful');
+				else
+					$this->session->set_flashdata('info','Database error: Try aftersome time');
+				$this->load->view('admin_add_user');
+			}
+		}
+		else{
+			$this->session->set_flashdata('info','Password and confirm password do not match');
+			$this->load->view('admin_add_user');
+		}
+	}
+
+	//to view editorial board list
+ 	public function view_editorials_list(){
+		$this->session->set_userdata('title','Editorial Board');
+		//get editorials list
+		$editorial_list = $this->AdminModel->get_editorial_list();
+		$this->load->view('admin_list_editorials',['user_list'=>$editorial_list]);
+	}
+
+	//to view add editorial board
+	public function view_add_editorial(){
+		$this->session->set_userdata('title','Add Editorial');
+		$this->load->view('admin_add_editorial');
+	} 
+
+	//to add editorial
+	public function add_editorial(){
+		$name = $this->input->post('name');
+		$email = $this->input->post('email');
+		$password  = $this->input->post('password');
+		$cpassword  = $this->input->post('cpassword');
+		$position  = $this->input->post('position');
+		$address  = $this->input->post('address');
+		$publications  = $this->input->post('publications');
+
+		if($password == $cpassword){
+			//check email already registered
+
+			$checked = $this->AdminModel->email_exist($email);
+			if($checked){
+				//email already registered
+				$this->session->set_flashdata('info','Email already resistered');
+				$this->load->view('admin_add_editorial');
+			}
+			else{
+				//resister
+				$is_registered =  $this->AdminModel->register_editorial($name, $email, $password,
+					$position, $address, $publications);
+				if($is_registered)
+					$this->session->set_flashdata('info','Registration successful');
+				else
+					$this->session->set_flashdata('info','Database error: Try aftersome time');
+				$this->load->view('admin_add_editorial');
+			}
+		}
+		else{
+			$this->session->set_flashdata('info','Password and confirm password do not match');
+			$this->load->view('admin_add_editorial');
+		}
+	}
+
+	//get particular user detalis
+	public function view_editorial($editorial_id){
+		$this->session->set_userdata('editorial_id', $editorial_id);
+		return redirect('Admin/view_editorial_final');
+	}
+	public function view_editorial_final(){
+		$editorial_id = $this->session->userdata('editorial_id');
+
+		$this->AdminModel->get_editorial_details($editorial_id);
+			
+		$this->load->view('admin_view_editorial');
+	}
+
+	//to update editorial profile
+	public function update_editorial_profile(){
+		$editorial_id = $this->session->userdata('editorial_id');
+		$name = $this->input->post('name');
+		$password  = $this->session->userdata('editorial_password');
+		$email  = $this->input->post('email');
+		$position  = $this->input->post('position');
+		$address  = $this->input->post('address');
+		$publications  = $this->input->post('publications');
+
+		$this->AdminModel->update_editorial_profile($name, $password, $email, $editorial_id,
+											$position, $address, $publications);
+		
+		return redirect('Admin/view_editorial/'.$editorial_id);
+	}
+
+	//to remove editorial
+	public function delete_editorial($editorial_id){
+		$this->AdminModel->delete_editorial($editorial_id);
+		return redirect('Admin/view_editorials_list');
 	}
 }

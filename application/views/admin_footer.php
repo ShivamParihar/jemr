@@ -6,6 +6,15 @@
       </div>
     </footer>
   </div>
+<!-- <script>
+function openPopUp() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closePopUp() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script> -->
 <script>
    function passwordToggle() {
   var x = document.getElementById("mypassword");

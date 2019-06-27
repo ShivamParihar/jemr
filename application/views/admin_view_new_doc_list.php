@@ -45,9 +45,16 @@
                             <td><?= $row->article_subject ?></td>
                             <td><?= $row->doc_link ?></td>
                             <td>
-                              <a class="btn pt-1 pb-1 pl-2 pr-2" style="background-color:#1DB6F0;color:white;" href="../Admin/view_doc_list/<?= $row->main_doc_id?>">
+                              <a class="btn pt-1 pb-1 pl-2 pr-2" style="background-color:#1DB6F0;color:white;" href="https://docs.google.com/viewerng/viewer?url=<?=base_url('uploads/'. $row->doc_link);?>">
                                 <i class="mdi mdi-file-pdf menu-icon"></i>
                               </a>
+
+                              <!-- <div class="form-popup" id="myForm" style="display: none;position: fixed;top:10%;left:10%;width:80%;height:80%;border: 3px solid #333;z-index: 99999;background-color: white;padding :20px;overflow: scroll;">
+                                <div class="m-tb-20" style="text-align:center;">
+                                  <button type="button" class="cancel btn btn-danger m-b-10" onclick="closePopUp()">Close</button>                  
+                                </div> 
+                                <iframe id="step2-pdf" src="https://docs.google.com/gview?url=https://easychair.org/publications/easychair.docx&embedded=true" frameborder="0" height="100%" width="100%"></iframe>
+                              </div>    -->                        
                             </td>
                             <td>
                               <?php 
