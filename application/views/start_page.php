@@ -17,19 +17,11 @@
               </div>
 
               <ul class="p-t-35">
-                <li class="how-bor3 p-rl-4">
-                  Call for Papers..
-                  PIJR invites high-quality Research Papers/Articles for July 2019 Issue ...
-                </li>
-
-                <li class="how-bor3 p-rl-4">
-                  June Issue Released..
-                  Dear Colleague, June issue of Paripex - Indian Journal Of Research is released...thank you very much for your intellectual contribution ...
-                </li>    
-                <li class="how-bor3 p-rl-4">
-                  June Issue Released..
-                  Dear Colleague, June issue of Paripex - Indian Journal Of Research is released...thank you very much for your intellectual contribution ...
-                </li>                            
+                <?php if( count($news_list) ): ?>
+                  <?php foreach( $news_list as $row ): ?>
+                    <li class="how-bor3 p-rl-4 m-t-10"><?=$row->news ?></li>
+                  <?php endforeach; ?>
+                <?php endif; ?>       
               </ul>
             </div>
 
@@ -49,8 +41,7 @@
                   </a>
 
                   <div class="size-w-3 flex-wr-sb-c">
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">                     Like
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Like</a>
                   </div>
                 </li>
 
@@ -62,9 +53,7 @@
                   <div class="size-w-3 flex-wr-sb-c">
                     </span>
 
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
-                      Follow
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Follow</a>
                   </div>
                 </li>
 
@@ -74,9 +63,7 @@
                   </a>
 
                   <div class="size-w-3 flex-wr-sb-c">
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
-                      Follow
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Follow</a>
                   </div>
                 </li>
 
@@ -88,9 +75,7 @@
                   <div class="size-w-3 flex-wr-sb-c">
                     </span>
 
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
-                      Follow
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Follow</a>
                   </div>
                 </li>
 
@@ -102,9 +87,7 @@
                   <div class="size-w-3 flex-wr-sb-c">
                     </span>
 
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
-                      Follow
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Follow</a>
                   </div>
                 </li>
 
@@ -116,9 +99,7 @@
                   <div class="size-w-3 flex-wr-sb-c">
                     </span>
 
-                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
-                      Follow
-                    </a>
+                    <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">Follow</a>
                   </div>
                 </li>
               </ul>
@@ -170,62 +151,71 @@
                       <tbody>
                         <tr>
                           <td class="p-l-30 p-b-20">Title</td>
-                          <td class="p-l-30 p-b-20">: 
-                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
+                          <td class="p-l-30 p-b-20">: <?=$get_latest_3_article_list[0]['title']?></td>
                         </tr>
                         <tr>
                           <td class="p-l-30 p-b-20">Author</td>
-                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
+                          <td class="p-l-30 p-b-20">: <?=$get_latest_3_article_list[0]['name']?></td>
                         </tr>
                         <tr>
                           <td class="p-l-30 p-b-20">Subject</td>
-                          <td class="p-l-30 p-b-20">: Ayurveda</td>
+                          <td class="p-l-30 p-b-20">: <?=$get_latest_3_article_list[0]['article_subject']?></td>
                         </tr>
                       </tbody>
                     </table>
-                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                    
+                    <a class="m-b-40 m-l-40 p-1" style="color:#222;background-color: #fff;display: inline-block;" href="https://docs.google.com/viewerng/viewer?url=<?=base_url('uploads/'.$get_latest_3_article_list[0]['doc_link'] );?>">Read More</a>                   
                   </div>
-
-                 <div class="item">
-                    <table style="width:100%;">
-                      <tbody>
-                        <tr>
-                          <td class="p-l-30 p-b-20">Title</td>
-                          <td class="p-l-30 p-b-20">: 
-                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
-                        </tr>
-                        <tr>
-                          <td class="p-l-30 p-b-20">Author</td>
-                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
-                        </tr>
-                        <tr>
-                          <td class="p-l-30 p-b-20">Subject</td>
-                          <td class="p-l-30 p-b-20">: Ayurveda</td>
-                        </tr>
-                      </tbody>
-                    </table> 
-                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                    
-                  </div>
-
+                 
                   <div class="item">
                     <table style="width:100%;">
                       <tbody>
                         <tr>
                           <td class="p-l-30 p-b-20">Title</td>
                           <td class="p-l-30 p-b-20">: 
-                          ANTI-ULCER ACTIVITY OF RASA PARPATI IN RATS </td>
+                            <?=$get_latest_3_article_list[1]["title"]?>                        
+                          </td>
                         </tr>
                         <tr>
                           <td class="p-l-30 p-b-20">Author</td>
-                          <td class="p-l-30 p-b-20">: Dr. Anuroopa H K</td>
+                          <td class="p-l-30 p-b-20">: 
+                            <?=$get_latest_3_article_list[1]["name"]?>
+                          </td>
                         </tr>
                         <tr>
                           <td class="p-l-30 p-b-20">Subject</td>
-                          <td class="p-l-30 p-b-20">: Ayurveda</td>
+                          <td class="p-l-30 p-b-20">:
+                            <?=$get_latest_3_article_list[1]["article_subject"]?>
+                          </td>
                         </tr>
                       </tbody>
-                    </table>   
-                    <button class="m-b-40 m-l-40" style="color:#222;background-color: #fff">Read More</button>                  
+                    </table> 
+                    <a class="m-b-40 m-l-40 p-1" style="color:#222;background-color: #fff;display: inline-block;" href="https://docs.google.com/viewerng/viewer?url=<?=base_url('uploads/'.$get_latest_3_article_list[1]['doc_link'])?>">Read More</a>                   
+                  </div>
+                
+                  <div class="item">
+                    <table style="width:100%;">
+                      <tbody>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Title</td>
+                          <td class="p-l-30 p-b-20">: 
+                            <?=$get_latest_3_article_list[2]["title"]?>                        
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Author</td>
+                          <td class="p-l-30 p-b-20">: 
+                            <?=$get_latest_3_article_list[2]["name"]?>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-l-30 p-b-20">Subject</td>
+                          <td class="p-l-30 p-b-20">:
+                            <?=$get_latest_3_article_list[2]["article_subject"]?>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table> 
+                    <a class="m-b-40 m-l-40 p-1" style="color:#222;background-color: #fff;display: inline-block;" href="https://docs.google.com/viewerng/viewer?url=<?=base_url('uploads/'.$get_latest_3_article_list[2]['doc_link'])?>">Read More</a>                   
                   </div>
               
                 </div>

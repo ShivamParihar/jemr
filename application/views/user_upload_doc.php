@@ -16,7 +16,7 @@
           <div class="card">
             <div class="card-body">
               <h4>Upload New Document</h4><br>
-              
+              <a type="submit" class="btn btn-primary mr-2" style="float :right;">Format</a><br>
               <?php echo form_open_multipart('User/user_upload_doc',['class'=>'forms-sample']); ?>
                 <div class="form-group">
                   <label for="exampleInputCity1">Title*</label>

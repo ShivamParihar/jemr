@@ -40,8 +40,7 @@ class UserModel extends CI_Model {
 
   //get article subject list
   function get_subject_list(){
-    $q = $this->db->select('article_subject')
-                  ->get('article_subject_table');
+    $q = $this->db->get('article_subject_table');
 
     $subject_list = $q->result();
     return $subject_list;

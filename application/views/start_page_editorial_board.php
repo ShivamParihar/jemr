@@ -98,6 +98,7 @@
 
               <!-- Editorial Board -->
               <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">Editorial Board</h3>
+
               <div class="row">
                 <div class="col-md-6">
                     <div class="row" style="border:1px solid #333">
@@ -181,7 +182,8 @@
                       </div>                   
                     </div>
                 </div>
-              </div>                            
+              </div>
+
             </div>
           </div>
         </div>        

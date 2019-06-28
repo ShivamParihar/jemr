@@ -14,7 +14,12 @@ class Admin extends CI_Controller {
 	//to view profile
 	public function profile(){
 		$this->session->set_userdata('title','Admin Profile');
-		$this->load->view('admin_profile');
+		//get news list
+		$news_list = $this->AdminModel->get_news_list();
+		//get article subject list
+		$subject_list = $this->UserModel->get_subject_list();
+		
+		$this->load->view('admin_profile',['news_list'=>$news_list,'subject_list'=>$subject_list]);
 	}
 
 	//to update profile
@@ -244,5 +249,31 @@ class Admin extends CI_Controller {
 	public function delete_editorial($editorial_id){
 		$this->AdminModel->delete_editorial($editorial_id);
 		return redirect('Admin/view_editorials_list');
+	}
+
+	//to add latest news
+	public function add_latest_news(){
+		$news= $this->input->post('news');
+		$this->AdminModel->add_latest_news($news);
+		return redirect('Admin/profile'); 
+	}
+
+	//to remove news
+	public function remove_news($news_id){
+		$this->AdminModel->remove_news($news_id);
+		return redirect('Admin/profile');
+	}
+
+	//to add article subject
+	public function add_article_subject(){
+		$subject = $this->input->post('subject');
+		$this->AdminModel->add_article_subject($subject);
+		return redirect('Admin/profile'); 
+	}
+
+	//to remove article subject
+	public function remove_article_subject($article_subject_id){
+		$this->AdminModel->remove_article_subject($article_subject_id);
+		return redirect('Admin/profile');
 	}
 }

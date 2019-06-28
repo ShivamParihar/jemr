@@ -181,4 +181,46 @@ class AdminModel extends CI_Model {
   	$this->db->where('editorial_id', $editorial_id)
                 ->delete('editorial_board');
   }
+
+  //function to add news
+  function add_latest_news($news){
+    $data = array('news'=>$news);
+    $this->db->insert('news_info',$data);
+  }
+
+  //function to get news list
+  function get_news_list(){
+    $q = $this->db->get('news_info');
+
+    $news_list = $q->result();
+    return $news_list;
+  }
+
+  //to remove news
+  function remove_news($news_id){
+    $this->db->where('news_id', $news_id)
+              ->delete('news_info');
+
+  }
+
+  //function to add subject article
+  function add_article_subject($subject){
+    $data = array('article_subject'=>$subject);
+    $this->db->insert('article_subject_table',$data);
+  } 
+
+  //to remove news
+  function remove_article_subject($article_subject_id){
+    $this->db->where('article_subject_id', $article_subject_id)
+              ->delete('article_subject_table');
+
+  }
+
 }
+
+
+
+
+
+
+
