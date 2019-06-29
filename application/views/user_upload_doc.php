@@ -16,7 +16,21 @@
           <div class="card">
             <div class="card-body">
               <h4>Upload New Document</h4><br>
-              <a type="submit" class="btn btn-primary mr-2" style="float :right;">Format</a><br>
+
+              <!-- format button -->
+              <button class="close-in-mobile open-button btn btn-primary mr-2" onclick="openPopUp()" style="float :right;">Format</button><br><br>
+
+
+              <!-- fromat iframe -->
+              <div class="close-in-mobile form-popup" id="myForm" style="display: none;position: fixed; top:0px;left:0px;width:100%;height:100%;z-index: 9999999;background-color: white; padding :20px;overflow: scroll;">
+                <div class="m-tb-20" style="text-align:center;width:100%;height:90%;">
+                  <button type="button" class="cancel btn btn-danger mr-2 " onclick="closePopUp()" style="margin-bottom:15px;">Close</button>
+                  <iframe src="../../assets/jemr_template_pdf.pdf" height="100%" width="100%"></iframe>
+                </div> 
+              </div>
+
+
+
               <?php echo form_open_multipart('User/user_upload_doc',['class'=>'forms-sample']); ?>
                 <div class="form-group">
                   <label for="exampleInputCity1">Title*</label>
@@ -52,7 +66,12 @@
                   <span>I Acknowledge that attached file carries Authors Name & Designations on first page of the Manuscript.</span>
                 </div>
 
-                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                <button type="submit" class="btn btn-primary mr-2">Add</button><br><br>
+
+                <div class="row open-in-mobile" style="width:100%;border:1px solid black;">
+                  <img src="../../assets/images/logo.png" width="100%" height="auto">
+                </div>
+
               </form>
             </div>
           </div>

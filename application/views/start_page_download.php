@@ -20,7 +20,7 @@
       <!-- Template -->
       <h6 class="cl2 p-b-16 p-t-33 respon2"><b>Template</b></h6>
       <div class="pdf-wrapper wow fadeInUp" data-wow-duration="1s" style="visibility: visible;width: 100%;text-align: center;">
-        <iframe id="step2-pdf" src="https://www.engineerbabu.com/doc/Taxi-app-document.pdf" frameborder="0" height="500px" width="70%"></iframe>
+        <iframe id="step2-pdf" src="../../assets/jemr_template_pdf.pdf" frameborder="0" height="500px" width="70%"></iframe>
       </div>
 
     </div>

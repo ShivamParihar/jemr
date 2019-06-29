@@ -26,6 +26,17 @@
       border:none;
       background-color: inherit; 
     }
+    .open-in-mobile{
+      display: none;
+    }
+    @media only screen and (max-width: 900px) {
+      .close-in-mobile{
+        display:none;
+      }
+      .open-in-mobile{
+        display: inline-block;
+      }
+    }
   </style>
 </head>
 
